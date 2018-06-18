@@ -2,6 +2,10 @@ import socket
 import json
 import RPi.GPIO as GPIO
 
+from time import sleep
+# sleep for a sec so the daemon doesn't get its panties in a wad
+sleep(1)
+
 
 def calc_duty_cycle(val):
     return val * 5 + 7.5
